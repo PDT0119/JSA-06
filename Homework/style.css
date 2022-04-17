@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+#container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.items {
+    width: 300px;
+    height: 300px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+#criminals {
+    font-size: 8rem; 
+    color: red;}
+    .test {
+        width: 128px;
+        height: 128px;
+    }
