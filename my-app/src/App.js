@@ -1,21 +1,17 @@
-import './Header.css'
+
 import './App.css';
 import Header from './Header';
-import Navigation from './Nativigation';
-import Content from './Content';
 import Footer from './Footer';
-import Ind from './Ind';
+import Products from './Products';
+import Trend from './Trend';
+import { products } from './mock';
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navigation />
-      <div className='mid'>
-      <Ind />
-      <Content />
-      </div>
-    
-      <Footer />
+    <div className='App'>
+    <Header/>
+    <Products productItems = {products} />
+    <Trend/>
+    <Footer/>
     </div>
   );
 }
