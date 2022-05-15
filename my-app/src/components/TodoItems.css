@@ -1,0 +1,10 @@
+.Items {
+    background-color: blue;
+}
+.Icons {
+    height: 30px;
+    width: 30px;
+}
+.Icons:hover {
+    color: red;
+}

@@ -1,17 +1,12 @@
-
+import React, {useState} from 'react';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
-import Products from './Products';
-import Trend from './Trend';
-import { products } from './mock';
+import Container from './TodoContainer';
 function App() {
+  const [currentCount, setCurrentCount] = useState(0)
   return (
-    <div className='App'>
-    <Header/>
-    <Products productItems = {products} />
-    <Trend/>
-    <Footer/>
+    <div className="App">
+      <Container/>
+      <h1>Count: {currentCount}</h1>
     </div>
   );
 }
