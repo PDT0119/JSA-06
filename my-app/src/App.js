@@ -1,12 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState} from "react"
 import './App.css';
-import Container from './TodoContainer';
+
 function App() {
-  const [currentCount, setCurrentCount] = useState(0)
+  const [isLogin, setUser] = useState(false)
+  const onClickHandler = () => {
+  //   if (isLogin === false){
+  //     setUser(true)
+  //   } else {
+  //     setUser(false)
+  //   }
+  setUser(!isLogin)
+  }
+
   return (
     <div className="App">
-      <Container/>
-      <h1>Count: {currentCount}</h1>
+      {isLogin === true ? "pham duc thien" : "login"}
+      <button onClick={onClickHandler}>{isLogin === true ? "Logut" : "Login"}</button>
     </div>
   );
 }
