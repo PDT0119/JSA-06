@@ -1,23 +1,27 @@
-import React, {useState} from "react"
-import './App.css';
+import React, { useState } from "react";
+// import TodoComponent from "./components/TodoComponent";
+// import Login from "./components/Login";
+import DemoNextUI from "./components/DemoNextUI";
+import Usercontainer from "./components/Usercontainer";
+export default function App() {
+  // const [isLogin, setIsLogin] = useState(false);
 
-function App() {
-  const [isLogin, setUser] = useState(false)
-  const onClickHandler = () => {
-  //   if (isLogin === false){
-  //     setUser(true)
-  //   } else {
-  //     setUser(false)
-  //   }
-  setUser(!isLogin)
-  }
+  // const onClickHandler = () => {
+  //   // if (isLogin === true) {
+  //   //   setIsLogin(false);
+  //   // } else {
+  //   //   setIsLogin(true);
+  //   // }
+  //   setIsLogin(!isLogin);
+  // };
 
   return (
-    <div className="App">
-      {isLogin === true ? "pham duc thien" : "login"}
-      <button onClick={onClickHandler}>{isLogin === true ? "Logut" : "Login"}</button>
+    <div className="app">
+      {/* {isLogin === true ? <TodoComponent /> : <Login />}
+      <button onClick={onClickHandler}>
+        {isLogin === true ? "Logout Button" : "Login Button"}
+      </button> */}
+      <Usercontainer/>
     </div>
   );
 }
-
-export default App;
