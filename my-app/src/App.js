@@ -1,27 +1,12 @@
-import React, { useState } from "react";
-// import TodoComponent from "./components/TodoComponent";
-// import Login from "./components/Login";
-import DemoNextUI from "./components/DemoNextUI";
-import Usercontainer from "./components/Usercontainer";
-export default function App() {
-  // const [isLogin, setIsLogin] = useState(false);
 
-  // const onClickHandler = () => {
-  //   // if (isLogin === true) {
-  //   //   setIsLogin(false);
-  //   // } else {
-  //   //   setIsLogin(true);
-  //   // }
-  //   setIsLogin(!isLogin);
-  // };
-
+import './App.css';
+import StudentForm from './components/StudentForm';
+function App() {
   return (
-    <div className="app">
-      {/* {isLogin === true ? <TodoComponent /> : <Login />}
-      <button onClick={onClickHandler}>
-        {isLogin === true ? "Logout Button" : "Login Button"}
-      </button> */}
-      <Usercontainer/>
+    <div className="App">
+     <StudentForm/>
     </div>
   );
 }
+
+export default App;
